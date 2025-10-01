@@ -52,7 +52,8 @@ begin
                 "0000011" when bcd = "1011" else
                 "0010110" when bcd = "1100" else
                 "0100001" when bcd = "1101" else
-                "0000110" when bcd = "1111" else
+                "0000110" when bcd = "1110" else
+                "0111000" when bcd = "1111" else
                 "1000000";
 
 
