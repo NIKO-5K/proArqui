@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "contador32b_behav" "xil_defaultlib.contador32b" -log "elaborate.log" 

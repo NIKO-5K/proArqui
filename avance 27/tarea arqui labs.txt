@@ -1,0 +1,1 @@
+tarea hacer un divisor de frecuencia de clock para dar una frescuencia de 1 segundo exacto
