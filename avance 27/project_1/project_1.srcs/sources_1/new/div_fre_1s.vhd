@@ -44,7 +44,7 @@ component contador32b
            reset : in STD_LOGIC;
            count : out STD_LOGIC_VECTOR (31 downto 0));
 end component;
-signal resetint : std_logic;
+signal resetint, prueva : std_logic;
 signal cable3 : std_logic_vector (1 downto 0);
 signal dataout, datain, cuenta : std_logic_vector(31 downto 0);
 
@@ -54,11 +54,11 @@ begin
   u1: contador32b
   port map(
     count => cuenta,
-    reset => reset,
+    reset => prueva,
     clock => clock
     );
     
-   
+  prueva <= (reset or resetint);
     process (clock,cuenta,reset)
     begin
         if ( cuenta < x"2FAF080" or resetint ='1' ) then 
