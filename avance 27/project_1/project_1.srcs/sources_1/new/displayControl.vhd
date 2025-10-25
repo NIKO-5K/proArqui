@@ -120,7 +120,7 @@ begin
             segundos4 <= '0';
         elsif rising_edge(segundo) then
             
-            if cuenta >= x"00000003" then
+            if cuenta >= x"00000004" then
                 segundos4 <= '1';
                 que7 <= "00";
                 quebcd <= "00";

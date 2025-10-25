@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Sep 29 20:04:36 2025
+| Date         : Sat Oct 25 07:50:49 2025
 | Host         : LENOVO8309 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file displayControl_utilization_synth.rpt -pb displayControl_utilization_synth.pb
 | Design       : displayControl
@@ -153,13 +153,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | FDCE     |   67 |        Flop & Latch |
 | IBUF     |   18 |                  IO |
-| LUT6     |   16 |                 LUT |
 | CARRY4   |   16 |          CarryLogic |
+| LUT6     |   14 |                 LUT |
 | LUT4     |   14 |                 LUT |
-| LUT5     |   12 |                 LUT |
 | OBUF     |   11 |                  IO |
-| LUT2     |    4 |                 LUT |
-| LUT3     |    3 |                 LUT |
+| LUT2     |   11 |                 LUT |
+| LUT5     |    7 |                 LUT |
+| LUT3     |    4 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | LDCE     |    2 |        Flop & Latch |
 | BUFG     |    2 |               Clock |

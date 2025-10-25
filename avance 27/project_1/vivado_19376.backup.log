@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Oct 25 07:28:02 2025
-# Process ID: 6428
-# Current directory: C:/Users/njimenezs/Documents/labs/avance 27/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent660 C:\Users\njimenezs\Documents\labs\avance 27\project_1\project_1.xpr
-# Log file: C:/Users/njimenezs/Documents/labs/avance 27/project_1/vivado.log
-# Journal file: C:/Users/njimenezs/Documents/labs/avance 27/project_1\vivado.jou
-# Running On: LENOVO8309, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17008 MB
+# Start of session at: Tue Oct 21 18:33:36 2025
+# Process ID: 19376
+# Current directory: C:/Users/njimenezs/Documents/labor/PROYECTO/proArqui/avance 27/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13272 C:\Users\njimenezs\Documents\labor\PROYECTO\proArqui\avance 27\project_1\project_1.xpr
+# Log file: C:/Users/njimenezs/Documents/labor/PROYECTO/proArqui/avance 27/project_1/vivado.log
+# Journal file: C:/Users/njimenezs/Documents/labor/PROYECTO/proArqui/avance 27/project_1\vivado.jou
+# Running On: LENOVO8297, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17011 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.xpr}
+open_project {C:/Users/njimenezs/Documents/labor/PROYECTO/proArqui/avance 27/project_1/project_1.xpr}
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -72,10 +72,11 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.gen/sources_1'.
+INFO: [Project 1-313] Project file moved from 'C:/Users/njimenezs/Documents/labs/avance 27/project_1' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/njimenezs/Documents/labor/PROYECTO/proArqui/avance 27/project_1/project_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1475.523 ; gain = 368.562
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1480.512 ; gain = 238.441

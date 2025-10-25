@@ -49,7 +49,7 @@ component procesadorMips
            readEnable : out STD_LOGIC;
            writeEnable : out STD_LOGIC);
 end component;
-component registro32b
+component registo32b
     Port ( reset : in STD_LOGIC;
            clock : in STD_LOGIC;
            enable : in STD_LOGIC;
@@ -79,7 +79,7 @@ begin
         readEnable => read,
         writeEnable => write
         );
-    pc : registro32b
+    pc : registo32b
         port map(
         reset => reset,
         clock => clock,
