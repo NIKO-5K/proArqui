@@ -47,6 +47,7 @@ architecture Behavioral of displayControl is
 component div_fre_1s
     Port ( reset : in STD_LOGIC;
            clock : in STD_LOGIC;
+           fre : in STD_LOGIC_VECTOR (31 downto 0);
            frecu : out STD_LOGIC);
 end component;
 component  contador32b 
@@ -103,6 +104,7 @@ begin
      port map(
         clock => clock,
         reset => reset,
+        fre => x"00008968",
         frecu => segundo
      );
      cuenta4 : contador32b

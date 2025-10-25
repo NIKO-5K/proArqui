@@ -146,3 +146,204 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top div_fre_1s [current_fileset]
+set_property constrset div_freg [get_runs synth_1]
+set_property constrset div_freg [get_runs impl_1]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 08:07:44 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 08:10:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 08:11:47 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/div_fre_1s.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/div_fre_1s.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 08:26:26 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 08:27:20 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 08:28:34 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1950.539 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/div_fre_1s.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/div_fre_1s.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 08:44:28 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 08:45:25 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 08:46:26 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 08:47:56 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/div_fre_1s.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/div_fre_1s.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 08:49:57 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 08:50:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 08:52:01 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/div_fre_1s.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property top displayControl [current_fileset]
+set_property constrset display [get_runs synth_1]
+set_property constrset display [get_runs impl_1]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/div_fre_1s.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:06:51 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:07:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:09:01 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:14:03 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:15:04 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:18:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:19:49 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:20:43 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:21:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:27:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:28:25 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:29:34 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:33:07 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:34:01 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:35:27 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.srcs/utils_1/imports/synth_1/mux4a1_32b_v2.dcp with file C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/displayControl.dcp
+launch_runs synth_1 -jobs 4
+[Sat Oct 25 09:36:56 2025] Launched synth_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Oct 25 09:37:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 25 09:38:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/njimenezs/Documents/labs/avance 27/project_1/project_1.runs/impl_1/displayControl.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
