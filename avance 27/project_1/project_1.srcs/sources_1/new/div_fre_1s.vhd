@@ -35,6 +35,7 @@ use ieee.std_logic_unsigned.all;
 entity div_fre_1s is
     Port ( reset : in STD_LOGIC;
            clock : in STD_LOGIC;
+           fre : in STD_LOGIC_VECTOR (31 downto 0);
            frecu : out STD_LOGIC);
 end div_fre_1s;
 
@@ -46,11 +47,13 @@ component contador32b
 end component;
 signal resetint, prueva : std_logic;
 signal cable3 : std_logic_vector (1 downto 0);
-signal dataout, datain, cuenta : std_logic_vector(31 downto 0);
+signal dataout, datain, cuenta, top, mid, tras : std_logic_vector(31 downto 0);
 
 
 begin
-
+  top <= fre;
+  tras <=x"00000000";
+  mid <= tras+top(31 downto 1);
   u1: contador32b
   port map(
     count => cuenta,
@@ -61,13 +64,13 @@ begin
   prueva <= (reset or resetint);
     process (clock,cuenta,reset)
     begin
-        if ( cuenta < x"2FAF080" or resetint ='1' ) then 
+        if ( cuenta < mid or resetint ='1' ) then 
             frecu <= '1';
             resetint <= '0';
-        elsif (cuenta <x"5E69EC0"  and cuenta >= x"2FAF080" ) then
+        elsif (cuenta <top  and cuenta >= mid ) then
             frecu <= '0';
             resetint <= '0';
-        elsif(cuenta = x"5E69EC0")then
+        elsif(cuenta = top)then
             resetint <= '1';
             frecu <= '1';
        end if;

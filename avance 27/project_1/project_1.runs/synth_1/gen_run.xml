@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761396599" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/mux4a1_32b_v2.dcp">
-  <File Type="PA-TCL" Name="displayControl.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="displayControl_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="displayControl_reports.tcl"/>
-  <File Type="RDS-RDS" Name="displayControl.vds"/>
-  <File Type="RDS-UTIL" Name="displayControl_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="displayControl_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="displayControl.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="displayControl_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="displayControl_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761400197" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/mux4a1_32b_v2.dcp">
+  <File Type="PA-TCL" Name="div_fre_1s.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="div_fre_1s_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="div_fre_1s_reports.tcl"/>
+  <File Type="RDS-RDS" Name="div_fre_1s.vds"/>
+  <File Type="RDS-UTIL" Name="div_fre_1s_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="div_fre_1s_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="div_fre_1s.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="div_fre_1s_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="div_fre_1s_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/contador.vhd">
@@ -69,11 +69,11 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="displayControl"/>
+      <Option Name="TopModule" Val="div_fre_1s"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/display" RelGenDir="$PGENDIR/display">
-    <File Path="$PSRCDIR/display/imports/constrais/Basys-3-Master.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/div_freg" RelGenDir="$PGENDIR/div_freg">
+    <File Path="$PSRCDIR/div_freg/imports/constrais/Basys-3-Master.xdc">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/imports/constrais/Basys-3-Master.xdc"/>
         <Attr Name="ImportTime" Val="1757165627"/>
