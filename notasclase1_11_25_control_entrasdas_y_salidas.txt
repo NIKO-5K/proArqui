@@ -1,4 +1,9 @@
 si se le pasa una direccion mas gande de los bits de direcion de memoria va a "cortar" los bits que sobran y va tomar la direcion que quede(esto pude generar conflictos en la memoria)
 
 
-los mismo pasa si  intentamos leer un dato con las misma carateristicas 
+los mismo pasa si  intentamos leer un dato con las misma carateristicas
+
+
+tareas
+
+verificar procesador  
